@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 // import Navbar from "./Components/Navbar/Navbar";
 import Layout from "./Components/Layout/Layout";
@@ -7,7 +7,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import StartPage from "./Components/StartPage/StartPage";
 
-const route = createBrowserRouter([
+const route = createHashRouter([
   {
     path: "/",
     element: <Layout />,
