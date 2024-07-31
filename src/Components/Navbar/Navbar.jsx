@@ -1,6 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "flowbite";
 import { useState } from "react";
+//test
+import { Dropdown, Collapse, initTE } from "tw-elements";
+initTE({ Collapse, Dropdown });
 
 function Navbar() {
   const [padding, setPadding] = useState(true);
