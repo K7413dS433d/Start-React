@@ -26,14 +26,14 @@ function Navbar() {
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
-        <a
-          href="https://flowbite.com/"
+        <NavLink
+          to="/home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span className="self-center text-2xl md:text-[32px]  font-bold whitespace-nowrap text-white">
             START FRAMEWORK
           </span>
-        </a>
+        </NavLink>
         <button
           data-collapse-toggle="navbar-default"
           type="button"

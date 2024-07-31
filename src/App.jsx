@@ -13,6 +13,7 @@ const route = createHashRouter([
     element: <Layout />,
     children: [
       { index: true, element: <StartPage /> },
+      { path: "home", element:  <StartPage />},
       { path: "about", element: <About /> },
       { path: "portfolio", element: <Portfolio /> },
       { path: "contact", element: <Contact /> },
