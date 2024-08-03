@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import "flowbite";
 import { useState } from "react";
 
 function Navbar() {
@@ -19,13 +18,14 @@ function Navbar() {
     }
   });
 
+  const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav
       className={`bg-[#2c3e50]   fixed top-0 right-0 left-0 z-50 transition-all duration-700 ${
         padding ? "py-5" : "py-1"
       }`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3  ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <NavLink
           to="/home"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -40,6 +40,9 @@ function Navbar() {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-4 focus:ring-black"
           aria-controls="navbar-default"
           aria-expanded="false"
+          onClick={() => {
+            setToggleMenu(!toggleMenu);
+          }}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -59,10 +62,12 @@ function Navbar() {
           </svg>
         </button>
         <div
-          className="hidden w-full md:block md:w-auto  transition-all duration-500"
+          className={`transition-all duration-500 w-full md:block md:w-auto overflow-hidden md:h-auto ${
+            toggleMenu ? "h-44" : "h-0"
+          }`}
           id="navbar-default"
         >
-          <ul className=" font-medium flex flex-col px-2 gap-4 lg:gap-0 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0   ">
+          <ul className=" font-medium flex flex-col px-2 gap-4 lg:gap-0 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 ">
             <li>
               <NavLink
                 to="about"
