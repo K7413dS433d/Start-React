@@ -1,6 +1,5 @@
 import {  createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-// import Navbar from "./Components/Navbar/Navbar";
 import Layout from "./Components/Layout/Layout";
 import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
