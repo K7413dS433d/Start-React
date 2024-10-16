@@ -21,8 +21,10 @@ This project is my first portfolio template built with React. It serves as a sim
 
 ## Live Demo
 
-Check out the live version of the portfolio template here: [Live Demo]()
+Check out the live version of the portfolio template here: [Live Demo](https://k7413ds433d.github.io/Start-React/)
 
 ## Video
 
-Watch the walkthrough video of the portfolio template here: [Video Link]
+Watch the walkthrough video of the portfolio template here:
+
+https://github.com/user-attachments/assets/20ec29e7-862c-4c41-8314-90d533bc3aa0
